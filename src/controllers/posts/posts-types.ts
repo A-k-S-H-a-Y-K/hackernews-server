@@ -1,12 +1,4 @@
-import type { Prisma } from "@prisma/client";
-
-export type Post = {
-  id: string;
-  title: string;
-  content: string;
-  createdAt: Date;
-  updatedAt: Date;
-};
+import type { Post} from "@prisma/client";
 
 export type GetPostsResult = {
   posts: Post[];

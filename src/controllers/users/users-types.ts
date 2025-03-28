@@ -1,7 +1,4 @@
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
-type User = PrismaClient['user'];
+import type { User } from '@prisma/client';
 
 export type GetMeResult = {
   user: User;
