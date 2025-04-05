@@ -8,11 +8,11 @@ on:
 env:
   AZURE_REGION: centralindia
   RESOURCE_GROUP: HackerNews
-  CONTAINER_APPS_ENVIRONMENT: HackerNewsContainerAppsEnvironment
-  LOG_ANALYTICS_WORKSPACE: HackerNewsLogAnalyticsWorkspace
+  CONTAINER_APPS_ENVIRONMENT: managedEnvironment-HackerNews-80a9
+  LOG_ANALYTICS_WORKSPACE: workspacehackernewsbdbd
   ACR_REGISTRY: hackernews1si21cs007.azurecr.io # This has to be unique (at least the `HackerNews` bit)
-  ACR_REPOSITORY_NAME: HackerNews
-  CONTAINER_APP_NAME: hackermews
+  ACR_REPOSITORY_NAME: hackernews1
+  CONTAINER_APP_NAME: hackernews
   TARGET_PORT: 3000
 
 jobs:
