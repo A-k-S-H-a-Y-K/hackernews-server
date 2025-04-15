@@ -8,7 +8,7 @@ import { env } from "../environment.js";
 const app = new Hono();
 
 // Mount all routes
-app.route("/", allRoutes);
+app.route("", allRoutes);
 
 // Error handling middleware
 app.onError((err, c) => {
